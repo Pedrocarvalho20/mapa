@@ -1,38 +1,54 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles/styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="./img/icons8-calculadora-de-maçã-120.png" type="image/x-icon">
     <title>Barbecue Calculator</title>
-</head>
-<body>
+  </head>
+  <body>
     <main>
-        <div class="container">
-            <h2>Barbecue <span>Calculator</span></h2>
-            <img src="img/churrasco-removebg-preview.png" alt="churrasco" />
+      <div class="container">
+        <h2>Barbecue <span>Calculator</span></h2>
+        <img src="img/churrasco-removebg-preview.png" alt="churrasco" />
+      </div>
+      <div class="calculator">
+        <label for="homens">Homens</label>
+        <input
+          type="number"
+          id="homens"
+          placeholder="Digite o número de homens"
+        />
+
+        <label for="mulheres">Mulheres</label>
+        <input
+          type="number"
+          id="mulheres"
+          placeholder="Digite o número de mulheres"
+        />
+
+        <label for="criancas">Crianças</label>
+        <input
+          type="number"
+          id="criancas"
+          placeholder="Digite o número de crianças"
+        />
+
+        <button id="calcular">Calcular</button>
+
+        <div class="quantidade">
+          <h2>Quantidade de Itens a Serem Comprados</h2>
+          <p id="result"></p>
         </div>
-        <div class="calculator">
-            <label for="homens">Homens</label>
-            <input type="number" id="homens" placeholder="Digite o número de homens" />
-
-            <label for="mulheres">Mulheres</label>
-            <input type="number" id="mulheres" placeholder="Digite o número de mulheres" />
-
-            <label for="criancas">Crianças</label>
-            <input type="number" id="criancas" placeholder="Digite o número de crianças" />
-
-            <button id="calcular">Calcular</button>
-
-            <div class="quantidade">
-                <h2>Quantidade de Itens a Serem Comprados</h2>
-                <p id="result"></p>
-            </div>
-        </div>
+      </div>
     </main>
     <script src="js/script.js"></script>
-</body>
+  </body>
 </html>
